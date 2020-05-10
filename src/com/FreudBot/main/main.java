@@ -5,23 +5,31 @@ import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
+
 
 public class main {
 	
-	
-	  public static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
-	  public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
+	  static Dotenv dotenv = Dotenv.load();
+	  public static String ACCOUNT_SID = dotenv.get("TWILIO_ACCOUNT_SID");
+	  public static String AUTH_TOKEN = dotenv.get("TWILIO_AUTH_TOKEN");
+	  
 	
 	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
 		
-		Message message = Message.creator(new PhoneNumber("+15558675309"),
-		        new PhoneNumber("+15017250604"), 
+		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+		
+//		Twilio.setUsername(dotenv.get(ACCOUNT_SID));
+//		Twilio.setPassword(dotenv.get(AUTH_TOKEN));
+				
+		
+		Message message = Message.creator(new PhoneNumber("+12074159349"),
+		        new PhoneNumber("+12057549077"), 
 		        "This is the ship that made the Kessel Run in fourteen parsecs?").create();
 
 		    System.out.println(message.getSid());
