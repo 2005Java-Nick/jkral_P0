@@ -15,38 +15,30 @@ public class main {
 	  public static String ACCOUNT_SID = dotenv.get("TWILIO_ACCOUNT_SID");
 	  public static String AUTH_TOKEN = dotenv.get("TWILIO_AUTH_TOKEN");
 	  
-	
-	
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+						
+		Scanner scanner = new Scanner(System.in);
+			
+		System.out.println("Hi, I am FreudBot. What is your name?");
+		String name = scanner.nextLine();
+			
+		System.out.println("Hi "+ name + ". What is your cell phone number?");
+		String phoneNum = scanner.nextLine();
+		System.out.println(phoneNum);
+					
+		Quiz quiz = new Quiz();		
+	
+		quiz.questionAnimal();
+		quiz.questionClothing();
+		quiz.questionWater();
 		
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-		
-//		Twilio.setUsername(dotenv.get(ACCOUNT_SID));
-//		Twilio.setPassword(dotenv.get(AUTH_TOKEN));
-				
-		
-		Message message = Message.creator(new PhoneNumber("+12074159349"),
-		        new PhoneNumber("+12057549077"), 
-		        "This is the ship that made the Kessel Run in fourteen parsecs?").create();
-
-		    System.out.println(message.getSid());
+		quiz.analysis(phoneNum);
 		
 		
+//		quiz.textAnalysis(phoneNum);
 		
 		
-		
-		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("Hi, I am FreudBot. What is your name?");
-		String userName = scanner.nextLine();
-		
-		System.out.println("Hi "+ userName + ". What is your cell phone number?");
-		int phone = scanner.nextInt();
-		
-		Human human = new Human(userName, phone);
 	}
 
 }
