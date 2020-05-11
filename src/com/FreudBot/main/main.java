@@ -45,9 +45,6 @@ public class main {
 		quiz.analysis(phoneNum);
 		
 		
-//		quiz.textAnalysis(phoneNum);
-		
-		
 	}
 
 }
