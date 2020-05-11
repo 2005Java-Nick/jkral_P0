@@ -68,13 +68,13 @@ public class Quiz {
 		
 		String newLine = System.getProperty("line.separator");
 		
-		String analysis1 = "After careful analysis, Freudbot has determined that: " + newLine + "You see yourself as: " + animalAnswers[1];
+		String analysis1 = "After careful analysis, Freudbot has determined that: " + newLine + newLine + "You see yourself as: " + animalAnswers[1];
 		System.out.println(analysis1);
 		
-		String analysis2 = "Others see you as: " + clothingAnswers[1];
+		String analysis2 = newLine + "Others see you as: " + clothingAnswers[1];
 		System.out.println(analysis2);
 		
-		String analysis3 = "And you see your romantic life as: " + waterAnswers[1];
+		String analysis3 = newLine + "And you see your romantic life as: " + waterAnswers[1];
 		System.out.println(analysis3);
 		
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
