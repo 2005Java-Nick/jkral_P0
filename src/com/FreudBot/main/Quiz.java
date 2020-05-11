@@ -5,9 +5,14 @@ import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
+import java.io.Serializable;
+import org.apache.log4j.Logger;
+
 import io.github.cdimascio.dotenv.Dotenv;
 
-public class Quiz {
+public class Quiz  {
+	
+	private static Logger log = Logger.getRootLogger();
 	
 //	Human human;
 //	Instantiate needed twilio objects
@@ -22,13 +27,13 @@ public class Quiz {
 	String[] waterAnswers = new String[2];
 	
 //	Questions pertaining to favorite animal
-	public void questionAnimal()  {
+	public void questionAnimal() {
 //		sysout animal questions and store responses
 		String question = "What is your favorite type of animal?";		
 		System.out.println(question);
 		String animal = scanner.nextLine();
 		animalAnswers[0] = animal;
-		
+			
 		String likeQuestion = "What are three characteristics of that animal that you like? Think about adjectives like soft, cuddly etc...";
 		System.out.println(likeQuestion);
 		String animalLikes = scanner.nextLine();
