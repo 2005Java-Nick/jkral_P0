@@ -4,41 +4,47 @@ import java.util.Scanner;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
+import java.util.concurrent.TimeUnit;
+
+import io.github.cdimascio.dotenv.Dotenv;
+
 
 
 public class main {
 	
+	  
 	
-	  public static final String ACCOUNT_SID = System.getenv("TWILIO_ACCOUNT_SID");
-	  public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
-	
-	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	  static Dotenv dotenv = Dotenv.load();
+	  public static String ACCOUNT_SID = dotenv.get("TWILIO_ACCOUNT_SID");
+	  public static String AUTH_TOKEN = dotenv.get("TWILIO_AUTH_TOKEN");
+	  
+	public static void main(String[] args) throws InterruptedException {
 		
-		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-		
-		Message message = Message.creator(new PhoneNumber("+15558675309"),
-		        new PhoneNumber("+15017250604"), 
-		        "This is the ship that made the Kessel Run in fourteen parsecs?").create();
-
-		    System.out.println(message.getSid());
-		
-		
-		
-		
+		String newLine = System.getProperty("line.separator");
 		
 		Scanner scanner = new Scanner(System.in);
-		
+			
 		System.out.println("Hi, I am FreudBot. What is your name?");
-		String userName = scanner.nextLine();
+		String name = scanner.nextLine();
+			
+		System.out.println("Hi "+ name + ". What is your cell phone number?");
+		String phoneNum = scanner.nextLine();
+		System.out.println(phoneNum);
+					
+		Quiz quiz = new Quiz();		
+	
+		quiz.questionAnimal();
+		quiz.questionClothing();
+		quiz.questionWater();
 		
-		System.out.println("Hi "+ userName + ". What is your cell phone number?");
-		int phone = scanner.nextInt();
+		System.out.println(newLine + "...ANALYZING..." + newLine);
 		
-		Human human = new Human(userName, phone);
+		TimeUnit.SECONDS.sleep(3);
+		
+		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+		quiz.analysis(phoneNum);
+		
+		
 	}
 
 }
