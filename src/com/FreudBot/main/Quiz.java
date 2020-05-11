@@ -77,8 +77,8 @@ public class Quiz {
 		String analysis3 = newLine + "And you see your romantic life as: " + waterAnswers[1];
 		System.out.println(analysis3);
 		
-		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 		
+		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);		
 		
 		Message message = Message.creator(new PhoneNumber(phoneNum),
         new PhoneNumber("+12057549077"), 
