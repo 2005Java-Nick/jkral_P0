@@ -14,8 +14,7 @@ public class Quiz  {
 	
 	private static Logger log = Logger.getRootLogger();
 	
-//	Human human;
-//	Instantiate needed twilio objects
+//	Instantiate needed twilio and .env objects
 	static Dotenv dotenv = Dotenv.load();
 	public static String ACCOUNT_SID = dotenv.get("TWILIO_ACCOUNT_SID");
 	public static String AUTH_TOKEN = dotenv.get("TWILIO_AUTH_TOKEN");
