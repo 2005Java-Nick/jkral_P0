@@ -54,7 +54,7 @@ public class Quiz  {
 	}
 //	Questions pertaining to favorite body of water
 	public void questionWater()  {
-//		sysout water questions and store reponses
+//		sysout water questions and store responses
 		String question = "What is your favorite body of water? It could be specific, like Hudson River. Or it could be general, like lakes or oceans.";		
 		System.out.println(question);
 		String water = scanner.nextLine();
@@ -76,7 +76,7 @@ public class Quiz  {
 		String analysis2 = newLine + "Others see you as:" + newLine + clothingAnswers[1].toUpperCase();
 		System.out.println(analysis2);
 		
-		String analysis3 = newLine + "You see your romantic life as:" + newLine + waterAnswers[1].toUpperCase();
+		String analysis3 = newLine + "You see your romantic life as:" + newLine + waterAnswers[1].toUpperCase() + newLine + newLine;
 		System.out.println(analysis3);
 		
 //		init twilio and send text message to user's phone using twilio API

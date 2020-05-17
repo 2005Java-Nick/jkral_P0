@@ -1,10 +1,16 @@
 package com.FreudBot.main;
 
 import java.util.Scanner;
+
+import com.FreudBot.auth.Auth;
+import com.FreudBot.jdbc.ConnectionFactory;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 import java.util.concurrent.TimeUnit;
+
+import org.joda.time.IllegalFieldValueException;
+
 import io.github.cdimascio.dotenv.Dotenv;
 
 
@@ -17,11 +23,23 @@ public class main {
 	  public static String ACCOUNT_SID = dotenv.get("TWILIO_ACCOUNT_SID");
 	  public static String AUTH_TOKEN = dotenv.get("TWILIO_AUTH_TOKEN");
 	  
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException{
 		
 		String newLine = System.getProperty("line.separator");
 	
 		Scanner scanner = new Scanner(System.in);
+		
+		ConnectionFactory cf = new ConnectionFactory();
+		cf.getConnection();
+		
+		
+		
+		Auth auth = new Auth();		
+		auth.mainMenu();
+		
+		
+		
+		
 		
 //		Intro to get name and phone number
 		System.out.println("Hi, I am FreudBot. What is your name?");
@@ -30,7 +48,8 @@ public class main {
 		System.out.println("Hi "+ name + ". What is your cell phone number?");
 		String phoneNum = scanner.nextLine();
 //		System.out.println(phoneNum);
-//			Instantaiate the main Quiz class		
+		
+//			Instantiate the main Quiz class		
 		Quiz quiz = new Quiz();		
 //		methods to get answers to personality test
 		quiz.questionAnimal();
