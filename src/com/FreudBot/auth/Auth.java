@@ -58,6 +58,8 @@ public class Auth {
 			mainMenu();
 		}	
 		
+		scanner.close();
+		
 	}
 	
 	public void login() {
@@ -71,7 +73,8 @@ public class Auth {
 		ConnectionFactory cf = new ConnectionFactory();
 		cf.getConnection();
 		
-		// query db to check for valid user		
+		// query db to check for valid user	
+		scanner.close();
 		
 	}
 	

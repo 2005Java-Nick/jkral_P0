@@ -27,7 +27,7 @@ public class main {
 		
 		String newLine = System.getProperty("line.separator");
 	
-		Scanner scanner = new Scanner(System.in);
+		
 		
 		ConnectionFactory cf = new ConnectionFactory();
 		cf.getConnection();
@@ -39,7 +39,7 @@ public class main {
 		
 		
 		
-		
+		Scanner scanner = new Scanner(System.in);
 		
 //		Intro to get name and phone number
 		System.out.println("Hi, I am FreudBot. What is your name?");
@@ -62,7 +62,7 @@ public class main {
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 		quiz.analysis(phoneNum);
 		
-		
+		scanner.close();
 	}
 
 }
