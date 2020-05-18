@@ -43,10 +43,34 @@ public class Auth {
 		System.out.println("Please enter your password:");
 		String password = scanner.nextLine();
 		
-		ConnectionFactory cf = new ConnectionFactory();
-		cf.getConnection();
+		Connection conn = ConnectionFactory.getConnection();
+		PreparedStatement stmt;
+		String queryString = "SELECT * FROM Quiz_User where user_name=? and password=?;";
+		
 		
 		// query db to check for valid user	
+			    try {
+			    	stmt = conn.prepareStatement(queryString);
+			        
+			        stmt.setString(1, userName);
+			        stmt.setString(2, password);
+			        ResultSet results = stmt.executeQuery(); //where stmt is Object of PreparedStatement
+			        if(!results.next()) {
+			              System.out.println("Wrong Username and Password."); 
+			              mainMenu();
+			        }			        
+
+			    } catch (SQLException e) {
+			    	e.printStackTrace();
+			    }finally{
+			    	try {
+						System.out.println("Closing connection");
+						conn.close();
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    }
 		
 		
 	}

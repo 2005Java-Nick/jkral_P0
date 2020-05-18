@@ -33,7 +33,8 @@ public class main {
 				
 
 //			Instantiate the main Quiz class		
-		Quiz quiz = new Quiz();		
+		Quiz quiz = new Quiz();	
+		
 //		methods to get answers to personality test
 		quiz.questionAnimal();
 		quiz.questionClothing();
