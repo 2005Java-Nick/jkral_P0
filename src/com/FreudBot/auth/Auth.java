@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.FreudBot.jdbc.ConnectionFactory;
 import com.FreudBot.user.User;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -22,12 +23,15 @@ public class Auth {
 		System.out.println("Hi, my name is FreudBot, please select from the following options:");
 		System.out.println("Press 1 to login:");
 		System.out.println("Press 2 to create new account:");
+		System.out.println("Press 3 to show all users:");
 		
 		int choice = scanner.nextInt();
 		if (choice == 1) {
 			login();
 		} else if (choice == 2) {
 			createUser();
+		} else if (choice == 3) {
+			showUsers();
 		} else {
 			System.out.println("Invalid choice");
 			mainMenu();
@@ -47,8 +51,8 @@ public class Auth {
 		PreparedStatement stmt;
 		String queryString = "SELECT * FROM Quiz_User where user_name=? and password=?;";
 		
-		
 		// query db to check for valid user	
+		
 			    try {
 			    	stmt = conn.prepareStatement(queryString);
 			        
@@ -129,7 +133,34 @@ public class Auth {
 			}
 			
 		}
-	
-	}	
+		
+		public void showUsers(){
+			Connection conn = ConnectionFactory.getConnection();
+		  try
+		  {
+		    PreparedStatement stmt = conn.prepareStatement("select Display_All_Users()"); 
+//		    System.out.println("Stored Procedure executed successfully");
+		    ResultSet resultSet = stmt.executeQuery();
+		    System.out.println("ALL USERS:");
+		    while(resultSet.next()) {
+		    	System.out.println(resultSet.getString(1));
+		    }
+		    
+		    mainMenu();
+		    
+		  }
+		  catch(Exception err)
+		  {
+		    System.out.println("An error has occurred.");
+		    System.out.println("See full details below.");
+		    err.printStackTrace();
+		  }
+		}
+		
+}
 
+		
+	
+		
+		
 
