@@ -43,6 +43,7 @@ public class main {
 		
 //		instantiate the twilio object with protected account info and print analysis
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+//		System.out.println(auth.currPhone);
 		quiz.analysis(auth.currPhone);
 		
 	}

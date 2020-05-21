@@ -1,6 +1,7 @@
 package com.FreudBot.auth;
 
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 import com.FreudBot.jdbc.ConnectionFactory;
 import com.FreudBot.user.User;
@@ -13,6 +14,8 @@ import java.sql.SQLException;
 
 
 public class Auth {
+	
+	private static Logger log = Logger.getRootLogger();
 	
 	public String currPhone;
 	
@@ -64,10 +67,12 @@ public class Auth {
 			              mainMenu();
 			        } else {
 			        	currPhone = results.getString(4);
+			        	log.info("User logged in with phone number: " + currPhone);
 			        }
 
 			    } catch (SQLException e) {
 			    	e.printStackTrace();
+			    	log.error("SQL Exception", e);
 			    }finally{
 			    	try {
 //						System.out.println("Closing connection");
@@ -104,6 +109,7 @@ public class Auth {
 		User user = new User(firstName, lastName, phoneNum, userName, password);		
 		saveUser(user);
 		
+		
 	}		
 		
 		public void saveUser(User user) {
@@ -126,6 +132,7 @@ public class Auth {
 				e.printStackTrace();
 			} finally {
 				try {
+					log.info("User saved");
 //					System.out.println("Closing connection");
 					conn.close();
 				} catch (SQLException e) {

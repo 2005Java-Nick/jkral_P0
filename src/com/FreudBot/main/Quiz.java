@@ -65,9 +65,9 @@ public class Quiz  {
 		waterAnswers[1] = waterLikes;		
 	}
 //	method to sysout the analysis and also text the analysis
-	public void analysis(String phoneNum) {
-		
+	public void analysis(String phoneNum) {		
 		String newLine = System.getProperty("line.separator");
+		
 //		concatenate strings to provide analysis based on answers and sysout
 		String analysis1 = "After careful analysis, Freudbot has determined:" + newLine + newLine + "You see yourself as:" + newLine + animalAnswers[1].toUpperCase();
 		System.out.println(analysis1);
