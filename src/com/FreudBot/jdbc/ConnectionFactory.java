@@ -37,8 +37,8 @@ package com.FreudBot.jdbc;
 			
 			try {
 				conn = DriverManager.getConnection(url, username, password);
-				System.out.println("Connection Established and the DATABASE NAME IS:"
-                        + conn.getMetaData().getDatabaseProductName());
+//				System.out.println("Connection Established and the DATABASE NAME IS:"
+//                        + conn.getMetaData().getDatabaseProductName());
 			} catch (SQLException e) {
 				System.out.println("Unable to make connection");
 				e.printStackTrace();
@@ -57,6 +57,8 @@ package com.FreudBot.jdbc;
 			return cf.createConnection();
 			
 		}
+		
+		
 
 	}
 

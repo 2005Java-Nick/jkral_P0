@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 public class Auth {
 	
-	
+	public String currPhone;
 	
 	public void mainMenu() {
 		String newLine = System.getProperty("line.separator");
@@ -33,7 +33,7 @@ public class Auth {
 		} else if (choice == 3) {
 			showUsers();
 		} else {
-			System.out.println("Invalid choice");
+			System.out.println("Invalid choice. Please try again." + newLine);
 			mainMenu();
 		}	
 		
@@ -62,13 +62,15 @@ public class Auth {
 			        if(!results.next()) {
 			              System.out.println("Wrong Username and Password."); 
 			              mainMenu();
-			        }			        
+			        } else {
+			        	currPhone = results.getString(4);
+			        }
 
 			    } catch (SQLException e) {
 			    	e.printStackTrace();
 			    }finally{
 			    	try {
-						System.out.println("Closing connection");
+//						System.out.println("Closing connection");
 						conn.close();
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
@@ -124,7 +126,7 @@ public class Auth {
 				e.printStackTrace();
 			} finally {
 				try {
-					System.out.println("Closing connection");
+//					System.out.println("Closing connection");
 					conn.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block

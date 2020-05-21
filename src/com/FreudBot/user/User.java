@@ -2,11 +2,6 @@ package com.FreudBot.user;
 
 public class User {
 	
-	/* 
-	 * What do I need in this class? if user logs in then take quiz
-	 * if user creates new account, do they have to log in
-	 * 
-	 */
 	int id;
 	public String firstName;
 	public String lastName;
@@ -26,9 +21,6 @@ public class User {
 		this.phoneNum = phoneNum;
 		this.userName = userName;
 		this.password = password;
-	}
-	
-	
-	
+	}	
 
 }

@@ -25,9 +25,6 @@ public class main {
 		
 		String newLine = System.getProperty("line.separator");
 			
-		/*ConnectionFactory cf = new ConnectionFactory();
-		cf.getConnection();*/
-			
 		Auth auth = new Auth();		
 		auth.mainMenu();
 				
@@ -46,7 +43,7 @@ public class main {
 		
 //		instantiate the twilio object with protected account info and print analysis
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-//		quiz.analysis(phoneNum);
+		quiz.analysis(auth.currPhone);
 		
 	}
 
