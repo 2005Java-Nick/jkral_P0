@@ -2,11 +2,8 @@ package com.FreudBot.auth;
 
 import java.util.Scanner;
 import org.apache.log4j.Logger;
-
 import com.FreudBot.jdbc.ConnectionFactory;
 import com.FreudBot.user.User;
-
-import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

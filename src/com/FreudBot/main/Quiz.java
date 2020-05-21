@@ -84,8 +84,8 @@ public class Quiz  {
 		Message message = Message.creator(new PhoneNumber(phoneNum),
         new PhoneNumber("+12057549077"), 
         analysis1 + newLine + analysis2 + newLine + analysis3).create();
+//		System.out.println(message.getBody());
 
-//        System.out.println(message.getSid());
 	}
 	
 	

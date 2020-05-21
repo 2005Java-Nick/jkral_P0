@@ -336,3 +336,258 @@ Connection can be kept alive indefinitely
 Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
 http-outgoing-0: set socket timeout to 0
 Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+User logged in with phone number: 2074159349
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+Opening connection {s}->https://api.twilio.com:443
+Connecting to api.twilio.com/18.211.224.155:443
+Connecting socket to api.twilio.com/18.211.224.155:443 with timeout 10000
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+ peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.ashburn.us1.twilio.com, *.ashburn.ie1.twilio.com, *.ashburn.de1.twilio.com, *.ashburn.au1.twilio.com, *.ashburn-ix.us1.twilio.com, *.ashburn-ix.ie1.twilio.com, *.ashburn-ix.de1.twilio.com, *.ashburn-ix.au1.twilio.com, *.roaming.us1.twilio.com, *.roaming.ie1.twilio.com, *.roaming.de1.twilio.com, *.roaming.au1.twilio.com, *.roaming.twilio.com]
+ issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+Connection established 192.168.1.137:53188<->18.211.224.155:443
+http-outgoing-0: set socket timeout to 30500
+Executing request POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+Proxy auth state: UNCHALLENGED
+http-outgoing-0 >> POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+http-outgoing-0 >> Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==
+http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+http-outgoing-0 >> X-Twilio-Client: java-7.50.0
+http-outgoing-0 >> User-Agent: twilio-java/7.50.0 (1.8.0_251)
+http-outgoing-0 >> Accept: application/json
+http-outgoing-0 >> Accept-Encoding: utf-8
+http-outgoing-0 >> Content-Length: 198
+http-outgoing-0 >> Host: api.twilio.com
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==[\r][\n]"
+http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+http-outgoing-0 >> "X-Twilio-Client: java-7.50.0[\r][\n]"
+http-outgoing-0 >> "User-Agent: twilio-java/7.50.0 (1.8.0_251)[\r][\n]"
+http-outgoing-0 >> "Accept: application/json[\r][\n]"
+http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+http-outgoing-0 >> "Content-Length: 198[\r][\n]"
+http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 >> "To=2074159349&From=%2B12057549077&Body=After+careful+analysis%2C+Freudbot+has+determined%3A%0A%0AYou+see+yourself+as%3A%0A%0A%0AOthers+see+you+as%3A%0A%0A%0AYou+see+your+romantic+life+as%3A%0A%0A%0A"
+http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+http-outgoing-0 << "Date: Thu, 21 May 2020 11:08:47 GMT[\r][\n]"
+http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+http-outgoing-0 << "Content-Length: 934[\r][\n]"
+http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Id: RQ01dd0c96dfe24f1696268a5357e30993[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Duration: 0.098[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << "{"sid": "SM6d21ec5c711741a5af7b34ef88e7e349", "date_created": "Thu, 21 May 2020 11:08:47 +0000", "date_updated": "Thu, 21 May 2020 11:08:47 +0000", "date_sent": null, "account_sid": "ACc4d24e52990f4eb8590c64f5e0702bc9", "to": "+12074159349", "from": "+12057549077", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - After careful analysis, Freudbot has determined:\n\nYou see yourself as:\n\n\nOthers see you as:\n\n\nYou see your romantic life as:", "status": "queued", "num_segments": "2", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SM6d21ec5c711741a5af7b34ef88e7e349.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SM6d21ec5c711741a5af7b34ef88e7e349/Media.json"}}"
+http-outgoing-0 << HTTP/1.1 201 CREATED
+http-outgoing-0 << Date: Thu, 21 May 2020 11:08:47 GMT
+http-outgoing-0 << Content-Type: application/json
+http-outgoing-0 << Content-Length: 934
+http-outgoing-0 << Connection: keep-alive
+http-outgoing-0 << Twilio-Concurrent-Requests: 1
+http-outgoing-0 << Twilio-Request-Id: RQ01dd0c96dfe24f1696268a5357e30993
+http-outgoing-0 << Twilio-Request-Duration: 0.098
+http-outgoing-0 << Access-Control-Allow-Origin: *
+http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+http-outgoing-0 << Access-Control-Expose-Headers: ETag
+http-outgoing-0 << Access-Control-Allow-Credentials: true
+http-outgoing-0 << X-Powered-By: AT-5000
+http-outgoing-0 << X-Shenanigans: none
+http-outgoing-0 << X-Home-Region: us1
+http-outgoing-0 << X-API-Domain: api.twilio.com
+http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+Connection can be kept alive indefinitely
+Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+http-outgoing-0: set socket timeout to 0
+Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+User logged in with phone number: 2074159349
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+Opening connection {s}->https://api.twilio.com:443
+Connecting to api.twilio.com/18.211.224.155:443
+Connecting socket to api.twilio.com/18.211.224.155:443 with timeout 10000
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+ peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.ashburn.us1.twilio.com, *.ashburn.ie1.twilio.com, *.ashburn.de1.twilio.com, *.ashburn.au1.twilio.com, *.ashburn-ix.us1.twilio.com, *.ashburn-ix.ie1.twilio.com, *.ashburn-ix.de1.twilio.com, *.ashburn-ix.au1.twilio.com, *.roaming.us1.twilio.com, *.roaming.ie1.twilio.com, *.roaming.de1.twilio.com, *.roaming.au1.twilio.com, *.roaming.twilio.com]
+ issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+Connection established 192.168.1.137:53216<->18.211.224.155:443
+http-outgoing-0: set socket timeout to 30500
+Executing request POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+Proxy auth state: UNCHALLENGED
+http-outgoing-0 >> POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+http-outgoing-0 >> Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==
+http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+http-outgoing-0 >> X-Twilio-Client: java-7.50.0
+http-outgoing-0 >> User-Agent: twilio-java/7.50.0 (1.8.0_251)
+http-outgoing-0 >> Accept: application/json
+http-outgoing-0 >> Accept-Encoding: utf-8
+http-outgoing-0 >> Content-Length: 236
+http-outgoing-0 >> Host: api.twilio.com
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==[\r][\n]"
+http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+http-outgoing-0 >> "X-Twilio-Client: java-7.50.0[\r][\n]"
+http-outgoing-0 >> "User-Agent: twilio-java/7.50.0 (1.8.0_251)[\r][\n]"
+http-outgoing-0 >> "Accept: application/json[\r][\n]"
+http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+http-outgoing-0 >> "Content-Length: 236[\r][\n]"
+http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 >> "To=2074159349&From=%2B12057549077&Body=After+careful+analysis%2C+Freudbot+has+determined%3A%0A%0AYou+see+yourself+as%3A%0AAS+ASDF+ASDF%0A%0AOthers+see+you+as%3A%0AASDF+SDG+RTH%0A%0AYou+see+your+romantic+life+as%3A%0AADFG+SDFG+SDFG%0A%0A"
+http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+http-outgoing-0 << "Date: Thu, 21 May 2020 11:11:12 GMT[\r][\n]"
+http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+http-outgoing-0 << "Content-Length: 974[\r][\n]"
+http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Id: RQ9ce7b7f391294165aecb853cd48656f3[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Duration: 0.082[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << "{"sid": "SM92355784b8d84a8ead22c7a461087151", "date_created": "Thu, 21 May 2020 11:11:12 +0000", "date_updated": "Thu, 21 May 2020 11:11:12 +0000", "date_sent": null, "account_sid": "ACc4d24e52990f4eb8590c64f5e0702bc9", "to": "+12074159349", "from": "+12057549077", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - After careful analysis, Freudbot has determined:\n\nYou see yourself as:\nAS ASDF ASDF\n\nOthers see you as:\nASDF SDG RTH\n\nYou see your romantic life as:\nADFG SDFG SDFG", "status": "queued", "num_segments": "2", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SM92355784b8d84a8ead22c7a461087151.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SM92355784b8d84a8ead22c7a461087151/Media.json"}}"
+http-outgoing-0 << HTTP/1.1 201 CREATED
+http-outgoing-0 << Date: Thu, 21 May 2020 11:11:12 GMT
+http-outgoing-0 << Content-Type: application/json
+http-outgoing-0 << Content-Length: 974
+http-outgoing-0 << Connection: keep-alive
+http-outgoing-0 << Twilio-Concurrent-Requests: 1
+http-outgoing-0 << Twilio-Request-Id: RQ9ce7b7f391294165aecb853cd48656f3
+http-outgoing-0 << Twilio-Request-Duration: 0.082
+http-outgoing-0 << Access-Control-Allow-Origin: *
+http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+http-outgoing-0 << Access-Control-Expose-Headers: ETag
+http-outgoing-0 << Access-Control-Allow-Credentials: true
+http-outgoing-0 << X-Powered-By: AT-5000
+http-outgoing-0 << X-Shenanigans: none
+http-outgoing-0 << X-Home-Region: us1
+http-outgoing-0 << X-API-Domain: api.twilio.com
+http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+Connection can be kept alive indefinitely
+Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+http-outgoing-0: set socket timeout to 0
+Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+User logged in with phone number: 2074159349
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+Opening connection {s}->https://api.twilio.com:443
+Connecting to api.twilio.com/18.208.54.140:443
+Connecting socket to api.twilio.com/18.208.54.140:443 with timeout 10000
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+ peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.ashburn.us1.twilio.com, *.ashburn.ie1.twilio.com, *.ashburn.de1.twilio.com, *.ashburn.au1.twilio.com, *.ashburn-ix.us1.twilio.com, *.ashburn-ix.ie1.twilio.com, *.ashburn-ix.de1.twilio.com, *.ashburn-ix.au1.twilio.com, *.roaming.us1.twilio.com, *.roaming.ie1.twilio.com, *.roaming.de1.twilio.com, *.roaming.au1.twilio.com, *.roaming.twilio.com]
+ issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+Connection established 192.168.1.137:53227<->18.208.54.140:443
+http-outgoing-0: set socket timeout to 30500
+Executing request POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+Proxy auth state: UNCHALLENGED
+http-outgoing-0 >> POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1
+http-outgoing-0 >> Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==
+http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+http-outgoing-0 >> X-Twilio-Client: java-7.50.0
+http-outgoing-0 >> User-Agent: twilio-java/7.50.0 (1.8.0_251)
+http-outgoing-0 >> Accept: application/json
+http-outgoing-0 >> Accept-Encoding: utf-8
+http-outgoing-0 >> Content-Length: 240
+http-outgoing-0 >> Host: api.twilio.com
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "POST /2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages.json HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Authorization: Basic QUNjNGQyNGU1Mjk5MGY0ZWI4NTkwYzY0ZjVlMDcwMmJjOTpkNDhkOGU3NjNiNTI1ZWI4NDFkMGE2ZDI0ZWM0MzQ2Nw==[\r][\n]"
+http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+http-outgoing-0 >> "X-Twilio-Client: java-7.50.0[\r][\n]"
+http-outgoing-0 >> "User-Agent: twilio-java/7.50.0 (1.8.0_251)[\r][\n]"
+http-outgoing-0 >> "Accept: application/json[\r][\n]"
+http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+http-outgoing-0 >> "Content-Length: 240[\r][\n]"
+http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 >> "To=2074159349&From=%2B12057549077&Body=After+careful+analysis%2C+Freudbot+has+determined%3A%0A%0AYou+see+yourself+as%3A%0AASDFSAD+SADF+ASDF%0A%0AOthers+see+you+as%3A%0AASDF+SGH+RETY%0A%0AYou+see+your+romantic+life+as%3A%0ASADF+QWER+WE%0A%0A"
+http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+http-outgoing-0 << "Date: Thu, 21 May 2020 11:12:28 GMT[\r][\n]"
+http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+http-outgoing-0 << "Content-Length: 978[\r][\n]"
+http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Id: RQc53351749c9a417380d18dbe3ed94e10[\r][\n]"
+http-outgoing-0 << "Twilio-Request-Duration: 0.090[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << "{"sid": "SMcacc1325f70b40c4a9a0517901facf1f", "date_created": "Thu, 21 May 2020 11:12:28 +0000", "date_updated": "Thu, 21 May 2020 11:12:28 +0000", "date_sent": null, "account_sid": "ACc4d24e52990f4eb8590c64f5e0702bc9", "to": "+12074159349", "from": "+12057549077", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - After careful analysis, Freudbot has determined:\n\nYou see yourself as:\nASDFSAD SADF ASDF\n\nOthers see you as:\nASDF SGH RETY\n\nYou see your romantic life as:\nSADF QWER WE", "status": "queued", "num_segments": "2", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SMcacc1325f70b40c4a9a0517901facf1f.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACc4d24e52990f4eb8590c64f5e0702bc9/Messages/SMcacc1325f70b40c4a9a0517901facf1f/Media.json"}}"
+http-outgoing-0 << HTTP/1.1 201 CREATED
+http-outgoing-0 << Date: Thu, 21 May 2020 11:12:28 GMT
+http-outgoing-0 << Content-Type: application/json
+http-outgoing-0 << Content-Length: 978
+http-outgoing-0 << Connection: keep-alive
+http-outgoing-0 << Twilio-Concurrent-Requests: 1
+http-outgoing-0 << Twilio-Request-Id: RQc53351749c9a417380d18dbe3ed94e10
+http-outgoing-0 << Twilio-Request-Duration: 0.090
+http-outgoing-0 << Access-Control-Allow-Origin: *
+http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+http-outgoing-0 << Access-Control-Expose-Headers: ETag
+http-outgoing-0 << Access-Control-Allow-Credentials: true
+http-outgoing-0 << X-Powered-By: AT-5000
+http-outgoing-0 << X-Shenanigans: none
+http-outgoing-0 << X-Home-Region: us1
+http-outgoing-0 << X-API-Domain: api.twilio.com
+http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+Connection can be kept alive indefinitely
+Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+http-outgoing-0: set socket timeout to 0
+Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
