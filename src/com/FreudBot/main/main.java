@@ -29,8 +29,8 @@ public class main {
 		auth.mainMenu();
 				
 
-//			Instantiate the main Quiz class		
-		Quiz quiz = new Quiz();	
+	
+		Quiz quiz = new Quiz();	 //Instantiate the main Quiz class	
 		
 //		methods to get answers to personality test
 		quiz.questionAnimal();

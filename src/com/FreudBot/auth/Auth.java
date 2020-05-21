@@ -122,7 +122,7 @@ public class Auth {
 				stmt.setString(3, user.phoneNum);
 				stmt.setString(4, user.userName);
 				stmt.setString(5, user.password);
-				System.out.println(user.password);
+				System.out.println(user.userName);
 				stmt.execute();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
